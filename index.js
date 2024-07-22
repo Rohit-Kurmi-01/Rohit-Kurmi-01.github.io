@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-contact p,.about-content',{ origin: 'right'});
 
 // =================================================scroll reveal ==================================================
 const typed = new typed('.multiple-text', {
-    String: [' Frontend Developer', 'web Designer' ,'youtuber'],
+    String: String[' Frontend Developer', 'web Designer' ,'youtuber'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
