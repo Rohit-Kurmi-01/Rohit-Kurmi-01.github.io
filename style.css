@@ -217,6 +217,51 @@ span{
     margin: 2rem 0 3rem ;
 }
 
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    row-gap: 2rem;
+}
+
+ .skill-container .skill-box {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 5rem 2rem 4rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+
+}
+
+.skill-container .skill-box:hover{
+    border-color: rgb(193, 23, 23);
+    transform: scale(1.02);
+
+}
+
+.skill-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+
+}
+
+.skill-name{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+
+}
+
+.skill-name::first-letter {
+    color: rgb(183, 255, 0);
+    font-size: 1.5em;
+}
+
 .services h2{
     margin-bottom:  5rem;
 }
@@ -226,7 +271,8 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
+    row-gap: 2rem;
 
 }
 .services-container .services-box {
@@ -263,6 +309,7 @@ span{
 
 .portfolio{
     background: var(--snd-bg-color);
+    margin-top: 1rem;
 }
 
 .portfolio h2 {
@@ -389,6 +436,11 @@ span{
     cursor: pointer;
 
 }
+
+.input-box form:hover {
+    border: #d47312;
+}
+
 
 .footer {
     display: flex;

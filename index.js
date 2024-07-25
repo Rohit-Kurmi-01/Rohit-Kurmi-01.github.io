@@ -44,10 +44,11 @@ ScrollReveal({
     duration: 2000,
     delay: 200,
 })
-ScrollReveal().reveal('.home-content, heading',{ origin: 'top'});
+ScrollReveal().reveal('.home-content, heading , .second-row',{ origin: 'top'});
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'buttom'});
-ScrollReveal().reveal('.home-contact h1, .about-img',{ origin: 'left'});
-ScrollReveal().reveal('.home-contact p,.about-content',{ origin: 'right'});
+ScrollReveal().reveal('.home-contact h1, .about-img , .first-row',{ origin: 'left'});
+ScrollReveal().reveal('.home-contact p,.about-content, .third-row ',{ origin: 'right'});
+
 
 // =================================================scroll reveal ==================================================
 const typed = new typed('.multiple-text', {
