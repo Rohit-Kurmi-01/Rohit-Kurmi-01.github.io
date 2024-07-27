@@ -7,6 +7,16 @@ MenuIcon.onclick = () => {
     MenuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
 }
+const h3 = document.querySelector('h3');
+const home_content = document.querySelector('.home-content');
+const click_event = MenuIcon.addEventListener('click', ()=>{
+//     const div = document.createElement('div');
+//     div.className = 'Nav-div';
+//     div.id = 'Nav-id';
+//     div.innerText = "hyy";
+//     document.home_content.appendchild(div);
+   h3.innerHTML = 'hello ji'
+})
 
 // ==============================Scroll section active link====================================
 
@@ -28,7 +38,7 @@ window.onscroll = () => {
         });
     };
  });
-//  =================================================sticky nevbay==========================================
+//  =================================================sticky nevbar==========================================
 
 let header = document.querySelector('header');
 header.classList.toggle('sticky', window.scrollY > 100);
