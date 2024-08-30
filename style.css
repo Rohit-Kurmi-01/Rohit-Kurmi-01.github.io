@@ -31,6 +31,18 @@ body{
 
 }
 
+h1::selection{
+    color: red;
+    background: #d47312;
+    
+}
+
+h1::-moz-selection{
+    color: red;
+    background: #fe8a16;
+}
+
+
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -190,7 +202,7 @@ span{
 
 .about-img{
     width: 115%;
-    height: 40%;
+    height: 35%;
     border-radius: 50%;
     border: #37c71a solid .5rem;
     overflow: hidden;
@@ -478,11 +490,26 @@ span{
 }
 
 /* BREACKPOINT */
+@media (max-width: 2100px){
+    .about-img img {
+        width: 110%;
+        margin-top:4rem ;
+       
+    }
+
+}
 
 @media (max-width: 1200px){
     html{
         font-size: 55%;
     }
+
+    .about-img img {
+        width: 110%;
+        margin-top:4rem ;
+       
+    }
+
 }
 
 @media (max-width: 991px){
@@ -611,5 +638,11 @@ span{
 
     .contact form .input-box input {
         width: 100%;
+    }
+    .about-img img {
+        padding: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.2rem;
+        margin-left: 1.2rem;
     }
 }
